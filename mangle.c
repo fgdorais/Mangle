@@ -24,7 +24,7 @@
 void help () {
   printf(PACKAGE_STRING" -- USAGE\n"
 	 "\n"
-	 " mangle [-cdoxX] [-l char_prefix] [-L word_prefix]\n"
+	 " mangle [-cdoxXzs] [-w width] [-l char_prefix] [-L word_prefix]\n"
 	 "        [-r char_suffix] [-R word_suffix] string ...\n"
 	 "\n"
 	 "  -c : character output (default)\n"
@@ -32,6 +32,9 @@ void help () {
 	 "  -o : octal output\n"
 	 "  -x : lower case hexadecimal output\n"
 	 "  -X : upper case hexadecimal output\n"
+	 "  -z : pad with zeros\n"
+	 "  -s : pad with spaces\n"
+	 "  -w : set minimum width to \"width\"\n"
 	 "  -l : prepend \"char_prefix\" to each character output\n"
 	 "  -L : prepend \"word_prefix\" to each string output\n"
 	 "  -r : append \"char_suffix\" to each character output\n"
